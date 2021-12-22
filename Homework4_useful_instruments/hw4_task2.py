@@ -5,11 +5,16 @@
 # Пример исходного списка: [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55].
 # Результат: [12, 44, 4, 10, 78, 123].
 
-res_list = []
-gen_list = [int(i) for i in input("Введите список чисел: ").split()]
-for i in range(1, len(gen_list)):
-    if gen_list[i] > gen_list[i-1]:
-        (res_list.append(gen_list[i]))
-print("Исходный список: ", gen_list)
-print("Список, где элементы больше предыдущего: ", res_list)
+# Мой вариант 1
+# res_list = []
+# gen_list = [int(i) for i in input("Введите список чисел: ").split()]
+# for i in range(1, len(gen_list)):
+#     if gen_list[i] > gen_list[i-1]:
+#         (res_list.append(gen_list[i]))
+# print("Исходный список: ", gen_list)
+# print("Список, где элементы больше предыдущего: ", res_list)
 
+# Вариант 2
+numbers_l = [300, 2, 12, 144, 1, 1, 4, 4, 10, 5, 7, 55, 123]
+res = [numbers_l[i] for i in range(1, len(numbers_l)) if numbers_l[i] > numbers_l[i-1]]
+print(res)

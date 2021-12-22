@@ -10,3 +10,8 @@ def my_func(el_prev, el):
     return el_prev * el
 print(reduce(my_func, list1))
 
+# Вариант 2
+# from functools import reduce
+#
+# numbers_list = [el for el in range(100, 1001, 2)]
+# print(reduce(lambda a, b: a * b, numbers_list))

@@ -6,6 +6,7 @@
 # Например, в первом задании выводим целые числа, начиная с 3, а при достижении числа 10 завершаем цикл.
 # Во втором также необходимо предусмотреть условие, при котором повторение элементов списка будет прекращено.
 
+# Вариант 1
 # Часть а:
 from itertools import count
 
@@ -31,3 +32,15 @@ for i in cycle(list):
         print(i, end=' ')
         count1 += 1
 
+
+# Эталонный вариант:
+#
+# from itertools import cycle, count
+#
+# n = 100
+# numbers_list = [el for el in  range(5)]
+# counter = count()
+# cycler = cycle(numbers_list)
+# print([next(counter) for el in range(n)])
+# print([next(cycler) for el in range(n)])
+#
