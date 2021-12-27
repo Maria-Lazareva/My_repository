@@ -1,0 +1,3 @@
+Petrov: 30000
+Pavlov: 80000
+Petrushin: 201
